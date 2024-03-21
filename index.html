@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <form>
+        <div class="main">
+            <header> <span class="logo">vini<span class="fit">fit</span></span></a></header>
+            <div class="login">
+                <h1>login</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="login" placeholder="Usuário...">
+                </div>
+                <div class="textfield">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="senha" placeholder="Senha...">
+                </div>
+                <input class="button" type="submit" onclick="logar();return false">
+            </div>
+    <a class="zap" href="https://wa.me/5512981319063"><img
+            src="https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png" alt="logo_zap"></a>
+    </div>
+</form>
+    <script>
+
+        function logar(){
+            var login = document.getElementById('login').value
+            var senha = document.getElementById('senha').value
+
+            if(login == "isa" && senha == "linda"){
+            location.href = "home.html";
+        }else{alert('Usuário ou Senha incorretos');}
+    }
+
+    </script>
+
+</body>
+
+</html>
